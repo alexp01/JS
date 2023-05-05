@@ -1,0 +1,66 @@
+
+
+# Variables
+- can be declared with "let", "var", "const".
+- they have different scopes in blocks, functions, global level.
+- const can not be changes, but they can be used for arrays, objects etc.
+- declaration is optional. In some cases in can be done after the usage of that variable. But there are some rules/conditions.
+
+
+# Variable types
+boolen
+numeric
+strings
+array
+"object"   {name: "toto", age : "23"}
+Date
+Maps its the same as objects but the keys can be of any type.
+NaN ; not a number
+Undefined
+null
+Sets : array with unique values
+
+# Operations
+- In some cases addition of a number or strings will change the type.
+
+# Comparison
+- plenty of options
+- === and !== are new, as it will compare the type+value
+
+
+# Logical blocks
+- If with if else.
+- Switch, that needs a break for each comparison.
+- For. You also have "For in" For out" "ForEach". The 3 parameter can be optional, or declared/used/changed outside.
+- While and Do/While
+- Try with Error catch and custom error in case of a specific case. It can have Finally also at the end.
+info:
+- you have break and continue.
+
+
+# If statements
+- you have a 1 line option also:
+condition ? true_expression : false_expression
+exemple:
+const age = 20;
+const age_group = age < 18 ? "Child" : "Adult";
+
+
+# Arrow functions
+- it's a 1 line option for a method.
+let myFunction = (a, b) => a * b;
+
+myFunction = () => "Hello World!";
+
+myFunction = (val) => "Hello " + val;
+
+myFunction = val => "Hello " + val;
+
+
+#Info:
+- "typeof variable" will tell you the type.
+- "'toto' instanceof String", will give a boolean response after the type comparison.
+- "use strict", will add some extra rules, regarding declaration and variable reusage.
+- "this" is a way to have access to an object properties of funtions.
+
+
