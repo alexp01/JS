@@ -1,4 +1,14 @@
 
+# Rules:
+- camelCase for variable names. Must start with letter. Can have numbers and some symbols.
+- UPPERCASE for globals.
+- before/after an operator you must have a space.
+- 2 spaces for indentation.
+- brackets even for 1 line block.
+- declare variables as locals ( used let, var or const) to not be considered as global.
+- initialize when declaring.
+- declare array and objects with const. Its value can still change.
+
 
 # Variables
 - can be declared with "let", "var", "const".
@@ -12,7 +22,7 @@ boolen
 numeric
 strings
 array
-"object"   {name: "toto", age : "23"}
+"object"  const my_obj =  {name: "toto", age : "23"} . my_obj.name == my_obj["name"]. There is a way to get key/pair values as an Array. It can use the For in to parse all its elements. Object.values will give all its values.
 Date
 Maps its the same as objects but the keys can be of any type.
 NaN ; not a number
@@ -20,8 +30,10 @@ Undefined
 null
 Sets : array with unique values
 
+
 # Operations
 - In some cases addition of a number or strings will change the type.
+
 
 # Comparison
 - plenty of options
@@ -31,8 +43,8 @@ Sets : array with unique values
 # Logical blocks
 - If with if else.
 - Switch, that needs a break for each comparison.
-- For. You also have "For in" For out" "ForEach". The 3 parameter can be optional, or declared/used/changed outside.
-- While and Do/While
+- For. You also have "For in" For out" "ForEach". The 3 parameter can be optional, or declared/used/changed outside. For in (objects)  For of (strings, arrays).
+- While and Do/While.
 - Try with Error catch and custom error in case of a specific case. It can have Finally also at the end.
 info:
 - you have break and continue.
@@ -56,11 +68,21 @@ myFunction = (val) => "Hello " + val;
 
 myFunction = val => "Hello " + val;
 
+# Method vs Function
+- there are the same but methods are asociated with Objects.
+- you can also declare  a function in a single line.
+- a function/method can have multiple values are argument, and this is done using "...args"
+
+
+# Clases
+- you can inherit a class, and pass with super some property values to the "mother" class.
+- statis methods can be used only by calling the class name but not using the object that will point to that class.
 
 #Info:
 - "typeof variable" will tell you the type.
 - "'toto' instanceof String", will give a boolean response after the type comparison.
 - "use strict", will add some extra rules, regarding declaration and variable reusage.
 - "this" is a way to have access to an object properties of funtions.
+- There is a get and set function to change objects properties.
 
 
