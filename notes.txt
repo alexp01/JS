@@ -93,6 +93,15 @@ myFunction = val => "Hello " + val;
   lastChild
   nextSibling
   previousSibling
+  
+#Printing:
+- one way of printing is console.log()
+exemple: 
+let var_a = "toto"
+cosole.log(`The name is ${selector}`)
+// be carefull that the string does not start with a standard ' but a special character `.
+  
+
 
 #Info:
 - "typeof variable" will tell you the type.
