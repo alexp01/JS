@@ -19,7 +19,7 @@
 
 # Variable types
 boolen
-numeric
+numeric, you have isNaN() to check is is not a numeric value.
 strings
 array
 "object"  const my_obj =  {name: "toto", age : "23"} . my_obj.name == my_obj["name"]. There is a way to get key/pair values as an Array. It can use the For in to parse all its elements. Object.values will give all its values.
@@ -68,15 +68,31 @@ myFunction = (val) => "Hello " + val;
 
 myFunction = val => "Hello " + val;
 
-# Method vs Function
+(x) => x >= 0 // this is also a function that has 1 parameters and returns a bool based on a comparison.
+
+
+# Method and Function
 - there are the same but methods are asociated with Objects.
 - you can also declare  a function in a single line.
 - a function/method can have multiple values are argument, and this is done using "...args"
+- Function can be async/await, with promises, with callback.
 
 
 # Clases
 - you can inherit a class, and pass with super some property values to the "mother" class.
 - statis methods can be used only by calling the class name but not using the object that will point to that class.
+
+
+# Elements
+- an elements is a node, with parent/children or siblings.
+- an atribute is a node atribute, a text is a node text etc...
+- You can navigate by using these methods:
+  parentNode
+  childNodes[nodenumber]
+  firstChild
+  lastChild
+  nextSibling
+  previousSibling
 
 #Info:
 - "typeof variable" will tell you the type.
